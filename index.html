@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chart Comparison</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Chart Comparison</h1>
+
+    <nav>
+        <a href="#" onclick="showPage('home')">Home</a>
+        <a href="#" onclick="showPage('bar')">Bar Chart</a>
+        <a href="#" onclick="showPage('line')">Line Graph</a>
+        <a href="#" onclick="showPage('pie')">Pie Chart</a>
+    </nav>
+
+    <section id="home">
+        <h2>Welcome</h2>
+        <p>This website explores different types of charts and their uses.</p>
+        <p>Click on a chart type in the navigation to learn more.</p>
+    </section>
+
+    <section id="bar">
+        <h2>Bar Chart</h2>
+        <div class="chart-container">
+            <canvas id="barChart"></canvas>
+        </div>
+        <p><strong>Uses:</strong></p>
+        <ul>
+            <li>Comparing values across different categories</li>
+            <li>Showing trends and patterns</li>
+        </ul>
+        <p><strong>Advantages:</strong></p>
+        <ul>
+            <li>Easy to read and understand</li>
+            <li>Visually effective for comparing discrete values</li>
+        </ul>
+        <p><strong>Disadvantages:</strong></p>
+        <ul>
+            <li>Can become cluttered with many categories</li>
+            <li>Difficult to compare subtle differences</li>
+        </ul>
+    </section>
+
+    <section id="line">
+        <h2>Line Chart</h2>
+        <div class="chart-container">
+            <canvas id="lineChart"></canvas>
+        </div>
+        <p><strong>Uses:</strong></p>
+        <ul>
+            <li>Showing trends and changes over time</li>
+            <li>Visualizing continuous data</li>
+        </ul>
+        <p><strong>Advantages:</strong></p>
+        <ul>
+            <li>Effective for visualizing trends and patters</li>
+            <li>Easy to see changes over time</li>
+        </ul>
+        <p><strong>Disadvantages:</strong></p>
+        <ul>
+            <li>Can be difficult to compare values at specific points</li>
+            <li>May not be suitable for large datasets</li>
+        </ul>
+    </section>
+
+    <section id="pie">
+        <h2>Pie Chart</h2>
+        <div class="chart-container">
+            <canvas id="pieChart"></canvas>
+        </div>
+        <p><strong>Uses:</strong></p>
+        <ul>
+            <li>Showing the proportion of parts to a whole</li>
+            <li>Comparing the relative sizes of different categories</li>
+        </ul>
+        <p><strong>Advantages:</strong></p>
+        <ul>
+            <li>Easy to understand and interpret</li>
+            <li>Visually appealing for showing proportions</li>
+        </ul>
+        <p><strong>Disadvantages:</strong></p>
+        <ul>
+            <li>Difficult to compare small differences</li>
+            <li>Can be difficult to read with many categories</li>
+        </ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
